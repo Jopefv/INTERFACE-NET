@@ -1,0 +1,130 @@
+:root{
+    --vermelho: #E50914;
+
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Elementos base*/
+
+body{
+    background-color: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+
+
+header .container{
+    margin-left: 15px;
+    font-family: 'Times New Roman', serif;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between; 
+} 
+
+header .Logo{
+    margin-left: 10px;
+    color: var(--vermelho);
+    font-family: 'Arial black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #ffff;
+}
+
+/*Serie principal*/
+
+
+
+.serie-principal{
+    font-size: 15px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('./img/capa.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.serie-principal .sinopse{
+    margin-left: 18px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    width: 800px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.titulo{
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: 0.5px;
+    color: white;
+    
+    padding: 18px 15px; 
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 15px;
+
+    cursor: pointer;
+    transition: .2s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.container{
+    margin-left: 20px;
+}
+.serie-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 10px;
+
+}
+#pesquisa{
+    color: gray;
+    background-color:black;
+    border: 0;
+    border-radius: 2px;
+    margin-left: 5px;
+}
